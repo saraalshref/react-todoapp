@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100 ">
+        <div class="col">
+          <div class="card"  style={{'border-radius':'.75rem', 'background-color': "#eff1f2"}}>
+    <TodoList/>
     </div>
+    </div>
+    </div>
+    </div>
+    </section>
   );
 }
 
